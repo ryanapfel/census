@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "census"
+version = "0.1.0"
+description = ""
+authors = ["Ryan Apfel <rasapfel@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+click = "^8.1.7"
+pandas = "^2.1.4"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+census = 'census.app:cli'  # Replace 'your-script-name' with the desired command name to run your app
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
